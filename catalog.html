@@ -16,7 +16,7 @@
              <a class="navigation-link" href="#">О Седоне</a>
              </li>
            <li class="navigation-item">
-             <a class="navigation-link" href="catalog.html">Гостиницы</a>
+             <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
              </li>
         </ul>
         <ul class="navigation-user">
@@ -36,12 +36,73 @@
        </ul>
       </nav>
     </header>
-    
-    
-    
-    
-    
-    <footer class="page-footer">              
+    <main class="main-inner">
+      <div class="inner">
+        <img src="" alt=""
+        <h1 class="inner-title">Гостиницы Судоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"><img src="" alt="Дом"></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+      <section class="catalog-hotel">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
+        <grouping class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+               <label class="control">
+                <input class="control-input" type="checkbox" name="Бассейн" checked>
+               </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                 <input class="control-input" type="checkbox" name="Парковка" checked>
+                </label>
+               </li>
+               <li class="catalog-filter-item">
+                <label class="control">
+                 <input class="control-input" type="checkbox" name="Wi-Fi">
+                </label>
+               </li>
+        </grouping>
+
+        <grouping class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="shaving-supplies">Мотель
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="shaving-supplies">Апартаменты
+              </label>
+            </li>
+        </grouping>
+         
+        <grouping class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <label for="cost">Стоимость</label>
+          <input type="range" id="cost" name="cost" min="0" max="9000" step="1000"> 
+        </grouping>
+
+        <button class="button" type="submit">Применить</button>
+        <input type="reset" value="Сбросить">
+      </section>
+      
+       </main>
+
+       <footer class="page-footer">              
       <section class="subscription">
         <h1>Подпишитесь на рассылку</h1>
         <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
