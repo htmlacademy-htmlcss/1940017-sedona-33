@@ -36,8 +36,9 @@
        </ul>
       </nav>
     </header>
+
     <main class="main-inner">
-      <div class="inner">
+      <nav class="inner">
         <img src="" alt=""
         <h1 class="inner-title">Гостиницы Судоны</h1>
         <ul class="breadcrumbs">
@@ -48,7 +49,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      <section class="catalog-hotel">
+        <div class="catalog-hotel">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
         <grouping class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -91,17 +92,36 @@
         </grouping>
          
         <grouping class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <label for="cost">Стоимость</label>
-          <input type="range" id="cost" name="cost" min="0" max="9000" step="1000"> 
+          <form action="https://echo.htmlacademy.ru/courses" method="post">Стоимость, ₽:
+              <input type="range" id="cost" name="cost" min="0" max="9000" step="1000"> 
+          </form>
         </grouping>
 
         <button class="button" type="submit">Применить</button>
         <input type="reset" value="Сбросить">
+        </div>
+      </nav>
+      <section class="choice">
+        <div class="output-area">
+          <lebel for="text">Найдено гостиниц:</lebel><output name="38"></output>
+        </div>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a href="#" class="button slideshow">
+          <span class="visually-hidden">Показать слайды</span>
+        </a>
+        <a  class="button" href="#" >
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
       </section>
-      
-       </main>
-
+     </main>
+   
        <footer class="page-footer">              
       <section class="subscription">
         <h1>Подпишитесь на рассылку</h1>
@@ -136,5 +156,4 @@
 </html>
     
 
-  </body>
-</html>
+ 
