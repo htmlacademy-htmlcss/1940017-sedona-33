@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="navigation">
+      <img src="logo.svg" alt="Город Седона." width="40" height="30">
+      <ul class="navigation-list">
+        <li class="navigaton-item">
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigaton-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-user">
+        <li class="navigaton-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск.</span>
+          </a>
+        </li>
+        <li class="navigaton-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное.</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Хочу сюда.</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-title">Гостиницы Судоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html"><img src="" alt="Дом."></a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="catalog-filter-housing">
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="choice1">
+          <h2 class="catalog-filter-title">Инфраструктура:</h2>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label for="service1">
+                <input id="service1" type="checkbox" name="Бассейн" checked>Бассейн
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label for="service2">
+                <input id="service2" type="checkbox" name="Парковка" checked>Парковка
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label for="service3">
+                <input id="service3" type="checkbox" name="Wi-Fi">Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="choice2">
+          <h2 class="catalog-filter-title">Тип жилья:</h2>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label for="place1">
+                <input id="place1" type="radio" name="Гостиница" value="shaving-supplies" checked>Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label for="place2">
+                <input id="place2" type="radio" name="Мотель" value="shaving-supplies">Мотель
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label for="place3">
+                <input id="place3" type="radio" name="Апартаменты" value="shaving-supplies">Апартаменты
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="choice3">
+          <h2 class="catalog-filter-title">Стоимость, ₽:</h2>
+          <label for="format1">
+            <input id="format1" type="text" placeholder="от">
+          </label>
+          <label for="format2">
+            <input id="format2" type="text" placeholder="до">
+          </label>
+
+          <label for="roller">
+            <input type="range" id="roller" name="cost" min="0" max="9000" step="1000">
+          </label>
+        </div>
+
+        <button class="button" type="submit">Применить</button>
+        <label for="discard">
+          <input id="discard" type="reset" value="Сбросить">
+        </label>
+      </form>
+    </section>
+
+    <form action="https://echo.htmlacademy.ru/" method="get"></form>
+    <section>
+
+      <span>Найдено гостиниц:</span><output name="number">38</output>
+
+      <select name="select-control" aria-label="Сортировка">
+        <option value="popular">Сначала популярное</option>
+        <option value="cheap">Сначала дешёвые</option>
+        <option value="expensive">Сначала дорогие</option>
+      </select>
+
+      <a href="#" class="button button-frame"><img src="" alt="Показать список."></a>
+      <a href="#" class="button"><img src="" alt="Показать слайды."></a>
+      <a class="button" href="#"><img src="" alt="Показать карточки."></a>
+
+      <div class="cards">
+        <ul class="housing-list">
+          <li class="housing-cards">
+            <img src="" alt="Гостиница в скале.">
+            <a class="housing-cards-link" href="housing.html">
+              <h3 class="housing-cards-title">Amara Resort&Spa</h3>
+            </a>
+            <a href="#" class="housing">Гостиница</a>
+            <a href="#" class="control">от 4000 ₽</a>
+
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <button type="button" formtarget="housing-cards">Подробнее</button>
+            <button class="checkbox" type="button" formtarget="housing-list">В избранное</button>
+
+            <!--Огромное сомнение по этой сборке кода-->
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <label for="A5" class="label_rating"></label>
+            <input name="rating" id="A5" type="checkbox" checked>
+            <label for="A4" class="label_rating"></label>
+            <input name="rating" id="A4" type="checkbox" checked>
+            <label for="A3" class="label_rating"></label>
+            <input name="rating" id="A3" type="checkbox" checked>
+            <label for="A2" class="label_rating"></label>
+            <input name="rating" id="A2" type="checkbox" checked>
+            <label for="A1" class="label_rating"></label>
+            <input name="rating" id="A1" type="checkbox">
+            <button class="button" type="submit">Рейтинг<output name="sum"> 8,5 </output></button>
+
+          </li>
+
+          <li class="housing-cards">
+            <img src="" alt="Городок перед скалами.">
+            <a class="housing-cards-link" href="housing.html">
+              <h3 class="housing-cards-title">Desert Quail Inn</h3>
+            </a>
+            <a href="#" class="housing">Гостиница</a>
+            <a href="#" class="control">от 3000 ₽</a>
+
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <button type="button" formtarget="housing-cards">Подробнее</button>
+            <button class="checkbox" type="button" formtarget="housing-list">В избранное</button>
+             <!---->
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <label for="B5" class="label_rating"></label>
+            <input name="rating" id="B5" type="checkbox" checked>
+            <label for="B4" class="label_rating"></label>
+            <input name="rating" id="B4" type="checkbox" checked>
+            <label for="B3" class="label_rating"></label>
+            <input name="rating" id="B3" type="checkbox" checked>
+            <label for="B2" class="label_rating"></label>
+            <input name="rating" id="B2" type="checkbox">
+            <label for="B1" class="label_rating"></label>
+            <input name="rating" id="B1" type="checkbox">
+            <button class="button" type="submit">Рейтинг <output name="sum"> 8,9 </output></button>
+
+          </li>
+
+          <li class="housing-cards">
+            <img src="" alt="Вид скал.">
+            <a class="housing-cards-link" href="housing.html">
+              <h3 class="housing-cards-title">Villas at Poco Diablo</h3>
+            </a>
+            <a href="#" class="housing">Гостиница</a>
+            <a href="#" class="control">от 2000 ₽</a>
+
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <button type="button" formtarget="housing-cards">Подробнее</button>
+            <button class="checkbox" type="button" formtarget="housing-list">В избранное</button>
+            <!---->
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <label for="C5" class="label_rating"></label>
+            <input name="rating" id="C5" type="checkbox" checked>
+            <label for="C4" class="label_rating"></label>
+            <input name="rating" id="C4" type="checkbox" checked>
+            <label for="C3" class="label_rating"></label>
+            <input name="rating" id="C3" type="checkbox">
+            <label for="C2" class="label_rating"></label>
+            <input name="rating" id="C2" type="checkbox">
+            <label for="C1" class="label_rating"></label>
+            <input name="rating" id="C1" type="checkbox">
+            <button class="button" type="submit">Рейтинг<output name="sum"> 8,9 </output></button>
+
+          </li>
+
+          <li class="housing-cards">
+            <img src="" alt="Дорога-серпантин.">
+            <a class="housing-cards-link" href="housing.html">
+              <h3 class="housing-cards-title">GreenTree Inn</h3>
+            </a>
+            <a href="#" class="housing">Гостиница</a>
+            <a href="#" class="control">от 3000 ₽</a>
+
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <button type="button" formtarget="housing-cards">Подробнее</button>
+            <button class="checkbox" type="button" formtarget="housing-list">В избранное</button>
+             <!---->
+            <form action="https://echo.htmlacademy.ru/" method="post"></form>
+            <label for="D5" class="label_rating"></label>
+            <input name="rating" id="D5" type="checkbox" checked>
+            <label for="D4" class="label_rating"></label>
+            <input name="rating" id="D4" type="checkbox" checked>
+            <label for="D3" class="label_rating"></label>
+            <input name="rating" id="D3" type="checkbox">
+            <label for="D2" class="label_rating"></label>
+            <input name="rating" id="D2" type="checkbox">
+            <label for="D1" class="label_rating"></label>
+            <input name="rating" id="D1" type="checkbox">
+            <button class="button" type="submit">Рейтинг<output name="sum"> 8,9 </output></button>
+          </li>
+        </ul>
+      </div>
+      <div class="addition">
+        <form action="https://echo.htmlacademy.ru/" method="post"></form>
+        <button class="pagination-show-more" type="button">Загрузить ещё</button>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link" href="index.html">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <span>Гостиниц на странице:</span>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <select name="select-control" label="number">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+          </select>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <h2>Подпишитесь на рассылку</h2>
+    <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+    <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label for="control">
+        <input id="control" type="text" placeholder="Ваш e-mail">
+      </label>
+      <button class="button" type="submit">Подписаться</button>
+    </form>
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a class="button" href="https://www.fasebook.com/htmlacademy">
+          <span class="visually-hidden">Facebook.</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">Twitter.</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <span class="visually-hidden">Youtube.</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+    <img class="footer-logo" src="https://htmlacademy.ru/" alt="htmlacademy.">
+  </footer>
+</body>
+
+</html>
