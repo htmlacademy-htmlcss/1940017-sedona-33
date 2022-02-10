@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/syyles.css">
 </head>
 
 <body>
@@ -41,9 +42,7 @@
     </nav>
   </header>
   <main class="main-invitation">
-
     <img src="images/prime/welcome.svg" width="458" height="352" alt="Приглашение в город на фоне скалистого пейзажа.">
-
     <section class="preview">
       <h1>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -96,33 +95,34 @@
     </section>
   </main>
   <footer class="page-footer">
-    <h2>Подпишитесь на рассылку</h2>
-    <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-    <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="footer">
+     <h2>Подпишитесь на рассылку</h2>
+     <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+     <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="e-mail">
         <input id="e-mail" type="text" placeholder="Ваш e-mail">
       </label>
       <button class="button" type="submit">Подписаться</button>
-    </form>
+     </form>
+    </div>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="https://www.fasebook.com/htmlacademy">
+        <a class="button-fasebook" href="https://www.fasebook.com/htmlacademy">
           <span class="visually-hidden">Facebook.</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://twitter.com/htmlacademy_ru">
+        <a class="button-twitter" href="https://twitter.com/htmlacademy_ru">
           <span class="visually-hidden">Twitter.</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+        <a class="button-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
           <span class="visually-hidden">Youtube.</span>
         </a>
       </li>
     </ul>
     <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
     <img class="footer-logo" src="images/bottom/logo-htmlacademy .svg" alt="htmlacademy.">
   </footer>
 </body>

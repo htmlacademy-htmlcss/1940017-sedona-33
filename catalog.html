@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/syyles.css">
 </head>
 
 <body>
@@ -107,9 +108,10 @@
         <button class="visually-hidden" type="reset">Сбросить</button>
       </form>
     </section>
-    <section>
-      <h2>Найдено гостиниц:</h2><output name="number">38</output>
-      <select name="select-control" aria-label="Сортировка">
+
+    <section class="pages">
+      <h2>Найдено гостиниц:<output name="number">38</output></h2>
+      <select name="select1-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
         <option value="cheap" selected>Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
@@ -120,7 +122,7 @@
           alt="Показать слайды."></a>
       <a href="#" class="button button-frame"><img src="images/hotels/mode-list.svg" width="16" height="14"
           alt="Показать список."></a>
-      <ul class="housing-list">
+       <ul class="housing-list">
         <li class="housing-cards">
           <img src="images/hotels/hotel-amara.jpg" width="300" height="206" alt="Гостиница в скале.">
           <a class="housing-cards-link" href="housing.html">
@@ -193,9 +195,8 @@
           </li>
         </ul>
       </div>
-      <div>
-        <p>Гостиниц на странице:</p>
-        <select name="select-control" aria-label="Сколько гостиниц показывать на странице">
+       <p>Гостиниц на странице:</p>
+        <select name="select2-control" aria-label="Сколько гостиниц показывать на странице">
           <option value="1"> 1 </option>
           <option value="2"> 2 </option>
           <option value="3"> 3 </option>
@@ -203,7 +204,6 @@
           <option value="5"> 5 </option>
           <option value="6"> 6 </option>
         </select>
-      </div>
     </section>
   </main>
 
