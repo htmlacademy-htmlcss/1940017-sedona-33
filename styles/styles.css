@@ -21,15 +21,17 @@ body {
   background-color:#F2F2F2;
   color:#000000 ;
   margin: 0;
-  background-image: url(/images/prime/photo-under-text.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 
 }
 .page-header{
   background-color: #ffffff;
 }
+.decor{
+  background-image: url(/images/prime/photo-under-text.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 
+}
 .page-header .visually-hidden{
   visibility: hidden;
 }
