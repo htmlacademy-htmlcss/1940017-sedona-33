@@ -10,7 +10,9 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <img src="images/cap/logo.svg" alt="Город Седона." width="139" height="70">
+      <div class="logo">
+        <img src="images/cap/logo.svg" alt="Город Седона." width="139" height="70">
+      </div>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="#">Главная</a>
@@ -51,6 +53,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="main-inner">
     <header class="inner-header">
       <h1 class="inner-title">Гостиницы Седоны</h1>
@@ -118,18 +121,22 @@
       </form>
     </section>
     <section class="pages">
-      <h2>Найдено гостиниц:<output name="number">38</output></h2>
-      <select name="select1-control" aria-label="Сортировка">
-        <option value="popular">Сначала популярное</option>
-        <option value="cheap" selected>Сначала дешёвые</option>
-        <option value="expensive">Сначала дорогие</option>
-      </select>
-      <a class="button" href="#"><img src="images/hotels/mode-tile.svg" width="16" height="14"
-          alt="Показать карточки."></a>
-      <a href="#" class="button"><img src="images/hotels/mode-slideshow.svg" width="16" height="14"
-          alt="Показать слайды."></a>
-      <a href="#" class="button button-frame"><img src="images/hotels/mode-list.svg" width="16" height="14"
-          alt="Показать список."></a>
+      <div class="sorting">
+        <h2>Найдено гостиниц:<output name="number">38</output></h2>
+        <select name="select1-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap" selected>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <div class="picking">
+          <a class="button" href="#"><img src="images/hotels/mode-tile.svg" width="16" height="14"
+              alt="Показать карточки."></a>
+          <a href="#" class="button"><img src="images/hotels/mode-slideshow.svg" width="16" height="14"
+              alt="Показать слайды."></a>
+          <a href="#" class="button button-frame"><img src="images/hotels/mode-list.svg" width="16" height="14"
+              alt="Показать список."></a>
+        </div>
+      </div>
       <ul class="housing-list">
         <li class="housing-cards">
           <img src="images/hotels/hotel-amara.jpg" width="300" height="206" alt="Гостиница в скале.">
@@ -202,58 +209,63 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+        <p>Гостиниц на странице:</p>
+        <select name="select2-control" aria-label="Сколько гостиниц показывать на странице">
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3 </option>
+          <option value="4"> 4 </option>
+          <option value="5"> 5 </option>
+          <option value="6"> 6 </option>
+        </select>
       </div>
-      <p>Гостиниц на странице:</p>
-      <select name="select2-control" aria-label="Сколько гостиниц показывать на странице">
-        <option value="1"> 1 </option>
-        <option value="2"> 2 </option>
-        <option value="3"> 3 </option>
-        <option value="4"> 4 </option>
-        <option value="5"> 5 </option>
-        <option value="6"> 6 </option>
-      </select>
     </section>
   </main>
+
   <footer class="page-footer">
-    <h2>Подпишитесь на рассылку</h2>
-    <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-    <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label for="control">
-        <input id="control" type="text" placeholder="Ваш e-mail">
-      </label>
-      <button class="button" type="submit">Подписаться</button>
-    </form>
-    <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a class="button" href="https://www.fasebook.com/htmlacademy">
-          <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3" /></svg>
-          <span class="visually-hidden">Facebook.</span>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="button" href="https://twitter.com/htmlacademy_ru">
-          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"
-              fill="#83B3D3" />
-          </svg>
-          <span class="visually-hidden">Twitter.</span>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"
-              fill="#83B3D3" />
-          </svg>
-          <span class="visually-hidden">Youtube.</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <img class="footer-logo" src="images/bottom/logo-htmlacademy.svg" alt="htmlacademy.">
+    <div class="registration">
+      <h2>Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="control">
+          <input id="control" type="text" placeholder="Ваш e-mail">
+        </label>
+        <button class="button" type="submit">Подписаться</button>
+      </form>
+    </div>
+    <div class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="https://www.fasebook.com/htmlacademy">
+            <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3" /></svg>
+            <span class="visually-hidden">Facebook.</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"
+                fill="#83B3D3" />
+            </svg>
+            <span class="visually-hidden">Twitter.</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"
+                fill="#83B3D3" />
+            </svg>
+            <span class="visually-hidden">Youtube.</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <img class="footer-logo" src="images/bottom/logo-htmlacademy.svg" alt="htmlacademy.">
+    </div>
   </footer>
 </body>
 
