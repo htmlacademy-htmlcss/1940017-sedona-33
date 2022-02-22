@@ -50,10 +50,20 @@ body {
 }
 
 .navigation-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style-type: none;
   width: 345px;
   margin-left: 30px;
 }
 .navigation-user{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style-type: none;
   width:264px;
   margin-left: auto;
 }
@@ -74,6 +84,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
 }
 
 .navigation-link{
