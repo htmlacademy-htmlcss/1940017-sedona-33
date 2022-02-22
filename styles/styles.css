@@ -13,43 +13,46 @@
   src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
-html{
+
+html {
   height: 100%;
 }
 
 body {
-  font-family:"PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   min-height: 100%;
-  background-color:#F2F2F2;
-  color:#000000 ;
+  background-color: #F2F2F2;
+  color: #000000;
   margin: 0;
 }
- /* Шапка*/
 
-.page-header{
+/* Шапка*/
+
+.page-header {
   background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
 }
 
-.page-header .visually-hidden{
+.page-header .visually-hidden {
   visibility: hidden;
 }
-.navigation{
+
+.navigation {
   display: flex;
   width: 1060px;
   margin: 0 auto;
 }
 
-.logo{
-  display:block
+.logo {
+  display: block
 }
 
-.navigation-list{
+.navigation-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,23 +61,24 @@ body {
   width: 345px;
   margin-left: 30px;
 }
-.navigation-user{
+
+.navigation-user {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   list-style-type: none;
-  width:264px;
+  width: 264px;
   margin-left: auto;
 }
 
-.navigation-item{
+.navigation-item {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
 
-.navigation-item .button{
+.navigation-item .button {
   width: 160px;
   height: 37px;
   background-color: #756257;
@@ -87,22 +91,23 @@ body {
 
 }
 
-.navigation-link{
-  color:inherit;
+.navigation-link {
+  color: inherit;
   text-decoration: none;
 }
 
 /*Картинка*/
 
-.decor{
+.decor {
   background-image: url(/images/prime/photo-under-text.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
   margin: 0 auto;
 }
-.decor img{
-  display:block;
+
+.decor img {
+  display: block;
   width: 458px;
   margin-left: 371px;
   margin-right: 371px;
@@ -110,16 +115,18 @@ body {
 
 /*Главная*/
 
-main-invitation{
-  flex-grow:1;
+main-invitation {
+  flex-grow: 1;
 }
-.preview{
+
+.preview {
   background-color: #ffffff;
   width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
 
 }
-.preview h1{
+
+.preview h1 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -127,86 +134,90 @@ main-invitation{
   text-align: center;
 }
 
-.preview p{
+.preview p {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
 }
+
 /* Причины*/
 
-.blocks{
+.blocks {
   display: block;
   width: 1200px;
   margin: 0 auto;
-  padding-inline-start:0;
-  margin-block-end:0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
   margin-block-start: 0;
 }
 
-.block1{
+.block1 {
   width: 400px;
   margin-right: 800px;
-  color:#ffffff;
-  background-color:#83B3D3 ;
+  color: #ffffff;
+  background-color: #83B3D3;
 }
 
-.mini-block{
+.mini-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-start;
   width: 1200px;
-  color:#000000;
-  background-color:#ffffff;
+  color: #000000;
+  background-color: #ffffff;
   text-align: center;
   text-transform: none;
   list-style-type: none;
-  padding-inline-start:0;
-  margin-block-end:0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
   margin-block-start: 0;
-  }
+}
 
-.mini-block .mini1{
+.mini-block .mini1 {
   width: 400px;
   margin-left: 0;
-  background-color:rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
-.mini-block .mini3{
+
+.mini-block .mini3 {
   width: 400px;
   margin-right: 0;
-  background-color:rgba(134, 173, 199, 0.12);
+  background-color: rgba(134, 173, 199, 0.12);
 }
-.mini-block h3{
+
+.mini-block h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.block2{
+.block2 {
   width: 400px;
-  color:#ffffff;
-  background-color:#83B3D3;
+  color: #ffffff;
+  background-color: #83B3D3;
 }
 
-.block3{
+.block3 {
   width: 400px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
-.block4{
+
+.block4 {
   width: 400px;
-  color:#000000;
+  color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.block5{
+.block5 {
   width: 400px;
-  color:#000000;
+  color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.blocks h2{
+.blocks h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -214,18 +225,18 @@ main-invitation{
   text-align: center;
 }
 
-.demand{
+.demand {
   display: block;
   width: 1200px;
   height: 417px;
   margin: 0 auto;
   background-color: #ffffff;
-  color:#000000;
+  color: #000000;
   text-align: center;
   text-transform: none;
 }
 
-.demand h2{
+.demand h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -233,12 +244,12 @@ main-invitation{
   text-transform: uppercase;
 }
 
-.demand p{
+.demand p {
   font-size: 22px;
   line-height: 26px;
 }
 
-.demand button{
+.demand button {
   width: 575px;
   height: 60px;
   background: #756257;
@@ -254,7 +265,7 @@ main-invitation{
 
 /*каталог-фильтр*/
 
-.main-inner{
+.main-inner {
   background-color: #ffffff;
   background-image: url(/images/hotels/catalog-background.jpg);
   background-size: 100% auto;
@@ -263,19 +274,20 @@ main-invitation{
   margin: 0 auto;
 }
 
-.inner-header h1{
+.inner-header h1 {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin-left:72px;
+  margin-left: 72px;
   margin-right: 601px;
-  color:#ffffff;
+  color: #ffffff;
 }
-.inner-header ul{
+
+.inner-header ul {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
-  align-content:flex-end;
+  justify-content: space-around;
+  align-content: flex-end;
   list-style-type: none;
   width: 130px;
   margin-left: 72px;
@@ -283,23 +295,23 @@ main-invitation{
   color: #ffffff;
 }
 
-.catalog-filter{
+.catalog-filter {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  align-content:space-between;
+  justify-content: space-between;
+  align-content: space-between;
   width: 1056px;
   margin-left: 72px;
   margin-right: 72px;
-  color:#ffffff
+  color: #ffffff
 }
 
-.filter-item{
+.filter-item {
   font-size: 18px;
   line-height: 23px;
 }
 
-.format{
+.format {
   width: 143px;
   height: 48px;
   font-size: 18px;
@@ -308,40 +320,44 @@ main-invitation{
   box-sizing: border-box;
   border-radius: 4px;
 }
-.catalog-filter-housing button{
+
+.catalog-filter-housing button {
   width: 160px;
   height: 48px;
   border: transparent;
   border-radius: 4px;
   background-color: #83B3D3;
-  color:#ffffff;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 }
 
-.catalog-filter-housing h2{
+.catalog-filter-housing h2 {
   visibility: hidden;
 }
-.catalog-filter-housing h3{
+
+.catalog-filter-housing h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
+
 .catalog-filter-housing .visually-hidden {
-  background-color:transparent;
+  background-color: transparent;
   border: transparent;
   text-transform: none;
 }
 
 /* каталог-сортировка*/
 
-.pages{
+.pages {
   background-color: #ffffff;
   color: #000000;
 }
-.sorting{
+
+.sorting {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -350,20 +366,22 @@ main-invitation{
   margin-right: 72px;
 }
 
-.pages h2{
- font-weight: 700;
- font-size: 30px;
- line-height: 39px;
- margin-right: 192px;
- text-align: left;
+.pages h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  margin-right: 192px;
+  text-align: left;
+
 }
-.pages p{
+
+.pages p {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
 
-.select1-control{
+.select1-control {
   width: 287px;
   height: 48px;
   border: 2px solid #E6E6E6;
@@ -376,11 +394,13 @@ main-invitation{
   margin-right: 81px;
 
 }
-.picking{
+
+.picking {
   width: 160px;
   height: 48px;
   margin-right: 0;
 }
+
 .picking .button {
   width: 48px;
   height: 48px;
@@ -393,7 +413,7 @@ main-invitation{
 
 /* каталог*/
 
-.housing-list{
+.housing-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -403,26 +423,27 @@ main-invitation{
   margin-left: 72px;
   margin-right: 72px;
 }
-.housing-cards{
+
+.housing-cards {
   width: 340px;
   background: #FFFFFF;
-  color:#000000
+  color: #000000
 }
 
-.housing-cards a{
-  color:inherit;
+.housing-cards a {
+  color: inherit;
   text-align: left;
   vertical-align: middle;
   text-decoration: none;
 }
 
-.housing-cards h3{
+.housing-cards h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
 }
 
-.housing-cards p{
+.housing-cards p {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -434,7 +455,7 @@ main-invitation{
   border: transparent;
   border-radius: 4px;
   background-color: #756257;
-  color:#FFFFFF;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -442,13 +463,13 @@ main-invitation{
   text-transform: uppercase;
 }
 
-.housing-cards .checkbox{
+.housing-cards .checkbox {
   width: 141px;
   height: 37px;
   border-radius: 4px;
   border: transparent;
   background-color: #83B3D3;
-  color:#FFFFFF;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -456,7 +477,8 @@ main-invitation{
   text-transform: uppercase;
   position: static;
 }
-.housing-cards .button-star{
+
+.housing-cards .button-star {
   width: 160px;
   height: 37px;
   background-color: #F2F2F2;
@@ -466,8 +488,9 @@ main-invitation{
   text-align: center;
   text-transform: uppercase;
 }
+
 /* загрузка*/
-.addition{
+.addition {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -478,34 +501,36 @@ main-invitation{
   margin-right: 72px;
 }
 
-.addition button{
+.addition button {
   width: 620px;
   height: 60px;
   margin-left: 290px;
   margin-right: 290px;
   background: #83B3D3;
- border-radius: 4px;
- border: transparent;
- color:#FFFFFF;
- font-weight: 700;
- font-size: 20px;
- line-height: 26px;
- text-align: center;
- text-transform: uppercase;
+  border-radius: 4px;
+  border: transparent;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
+
 /* страницы*/
 
-.pagination-link{
+.pagination-link {
   width: 50px;
   height: 50px;
   border-radius: 4px;
   border: transparent;
   background-color: #83B3D3;
-  color:#FFFFFF;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
 }
-.select2-control{
+
+.select2-control {
   width: 160px;
   height: 48px;
   border: 2px solid #E6E6E6;
@@ -521,30 +546,31 @@ main-invitation{
 
 .page-footer {
   width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   background-color: #ffffff;
   color: #000000;
   text-align: center;
   text-transform: none;
 }
 
-.footer{
+.footer {
   width: 1200px;
   height: 411px;
-  color:#ffffff;
+  color: #ffffff;
   background-image: url(/images/bottom/background-footer.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.registration{
+.registration {
   width: 800px;
   height: 417px;
   margin-left: 200px;
-  margin-right:200px;
+  margin-right: 200px;
 
 }
-.footer h2{
+
+.footer h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -552,29 +578,29 @@ main-invitation{
   text-transform: uppercase;
 }
 
-.footer p{
+.footer p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
-.appointment-form input{
- width: 595px;
- height:60px ;
- background: #F2F2F2;
- border-radius: 10px 0px 0px 10px;
- border: transparent;
- margin-right: 0px;
+.appointment-form input {
+  width: 595px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  border: transparent;
+  margin-right: 0px;
 
 }
 
-input::placeholder{
+input::placeholder {
   color: #000000;
   font-size: 18px;
   line-height: 26px;
 }
 
-.appointment-form button{
+.appointment-form button {
   width: 200px;
   height: 60px;
   background: #83B3D3;
@@ -583,19 +609,21 @@ input::placeholder{
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color:#ffffff;
+  color: #ffffff;
   text-transform: uppercase;
   margin-left: -5px;
 
 }
-.footer-social{
+
+.footer-social {
   width: 1200px;
   height: 120px;
-  margin:0 auto;
+  margin: 0 auto;
 
 
 }
-.footer-social-list{
+
+.footer-social-list {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -605,8 +633,9 @@ input::placeholder{
   margin-right: 61px;
   list-style-type: none;
 }
-.page-footer a{
-  color:inherit;
+
+.page-footer a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -615,20 +644,20 @@ footer .visually-hidden {
 
 }
 
-.footer-contacts-address-phone{
+.footer-contacts-address-phone {
   width: 720px;
   height: 50px;
   font-size: 40px;
   line-height: 40px;
-  margin-left:61px;
+  margin-left: 61px;
   margin-right: 53px;
 
 }
 
-.footer-logo{
+.footer-logo {
   width: 115px;
   height: 33px;
-  margin-left:53px;
+  margin-left: 53px;
   margin-right: 72px;
 
 }
