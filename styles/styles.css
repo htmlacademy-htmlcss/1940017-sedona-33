@@ -148,7 +148,7 @@ body {
 
 /*Главная*/
 
-main-invitation {
+.main-invitation {
   flex-grow: 1;
 }
 
@@ -205,7 +205,7 @@ main-invitation {
   text-align: center;
 }
 
-.block1 img:ul {
+.block1 img {
   width: 100%;
   height: auto;
 }
@@ -217,6 +217,11 @@ main-invitation {
   list-style-type: none;
   margin: 0;
   order: 0;
+}
+
+.mini-block img {
+  width: auto;
+  height: auto;
 }
 
 .mini-block .mini1 {
@@ -528,7 +533,7 @@ main-invitation {
   color: #333333;
 }
 
-#select1 {
+.select1 {
   display: block;
   width: 287px;
   height: 48px;
@@ -543,7 +548,7 @@ main-invitation {
   color: #000000;
 }
 
-#select1 option {
+.select1 option {
   width: 200px;
 }
 
@@ -716,7 +721,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  width: 1056;
+  width: 1056px;
   margin: 34px 72px 0 72px;
 
 }
@@ -783,7 +788,7 @@ hr {
   margin-top: 35px;
 }
 
-#select2 {
+.select2 {
   width: 160px;
   height: 48px;
   border: 2px solid #E6E6E6;
